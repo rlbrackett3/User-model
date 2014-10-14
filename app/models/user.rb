@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	
+	has_many :posts #to complete teh association
 
 	attr_accessor :password, :password_confirmation
 	before_save :encrypt_password
